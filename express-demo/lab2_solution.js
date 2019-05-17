@@ -3,10 +3,11 @@
 const express = require('express');
 const app = express();
 app.use(express.json())
+const path = require('path');
 
 
 const students = [
-    {id : 1, name: 'Chris', title: 'Male'},
+    {id : 1, name: 'Chris', title: 'Mr.'},
     {id: 2, name: 'Meghan', title: 'Mrs.'},
     {id: 3, name:'Jeff', title: 'Sir'},
     {id: 4, name:'Jamal', title: 'Dr.'},
@@ -15,14 +16,19 @@ const students = [
 
 //Routing
 
+app.use(express.static( path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
-    res.send("Welcome to digging in node.js");
+    res.send("Welcome to Lab 1 of digging in node.js");
 });
 
 
+app.get('/contact_lab1', (req,res) => {
+    res.sendFile(__dirname + '/public/lab1_test.html');
+});
+
 app.get('/api/students', (req,res) => {
-    //connect to database get classes
-    res.send(['Chris', 'Jeff', 'Jamal']);
+    res.send(students);
 });
 
 

@@ -16,23 +16,22 @@ const students = [
 //Routing
 
 app.get('/', (req, res) => {
-    res.send("Welcome to digging in node.js");
+    //TODO Welsome message
 });
 
 
 app.get('/api/students', (req,res) => {
-    //connect to database get classes
-    res.send(['Chris', 'Jeff', 'Jamal']);
+//TODO
+    //Create a get route “/api/students” that displays the contents of the “students” array in the browser window
 });
 
 
 app.post('/api/students', (req,res) => {
-    const student = {
-        id: students.length,
-        name: req.body.name
-    };
-    students.push(student);
-    res.send(student);
+//TODO
+    // takes two json arguments for name and title of student.
+    // Create a dictionary student and add the student to the dictionary array students
+    // Prints a confirmation to the console after the student is added
+    // Print the title and names of all the students to the console after it is added
 });
 
 
