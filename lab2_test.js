@@ -1,5 +1,6 @@
 const http = require('http')
 
+//use this to test your post routes.  make usre the port and host is correct
 const data = JSON.stringify({
     name: 'Shaun',
     title: 'Mr.'
