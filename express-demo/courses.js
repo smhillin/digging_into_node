@@ -4,8 +4,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-courses = ['math', 'science', 'history']
-
+courses = ['math', 'science', 'history'];
 
 app.get('/', (req, res) => {
     res.send("Welcome to digging in node.js");
