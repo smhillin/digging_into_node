@@ -1,6 +1,6 @@
 ## Step 1: Download Exercises
 
-
+    curl https://github.com/smhillin/digging_into_node/blob/master/lab-3
 
 ## Step 2: Import database locally
 
