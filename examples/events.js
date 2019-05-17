@@ -1,6 +1,6 @@
 //class EventEmmitter
 
-const EventEmitter = require('class-files/events');
+const EventEmitter = require('class-files/examples/events');
 
 //create object of event emmitter
 const emitter = new EventEmitter();

@@ -1,4 +1,4 @@
-const http = require('http')
+const http = require('class-files/examples/http')
 
 //use this to test your post routes.  make sure the port and host is correct
 const data = JSON.stringify({

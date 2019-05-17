@@ -1,4 +1,4 @@
-const http = require('class-files/http')
+const http = require('class-files/examples/http')
 
 //server is event emmiter
 const server = http.createServer();
