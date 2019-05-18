@@ -1,0 +1,2 @@
+const user = await getUser()
+
