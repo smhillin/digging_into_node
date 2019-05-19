@@ -1,4 +1,5 @@
 console.log('Before');
+
 getUser(1)
     .then(user => getRepositories(user.gitHubUsername))
     .then(repos => getCommits(repos[0]))
@@ -12,7 +13,7 @@ function getUser(id) {
         // Kick off some async work
         setTimeout(() => {
             console.log('Reading a user from a database...');
-            resolve({ id: id, gitHubUsername: 'mosh' });
+            resolve({ id: id, gitHubUsername: 'smhillin' });
         }, 2000);
     });
 }
