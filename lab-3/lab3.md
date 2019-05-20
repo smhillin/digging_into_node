@@ -17,9 +17,8 @@
 
 ## Part 2
 
-- Get all the publishe frontend and backend courses
+- Get all the published frontend and backend courses
 - Sort them by their price in a descending order
 - Pick only name and author
 - Display them
 
-## part 3
