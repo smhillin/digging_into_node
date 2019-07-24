@@ -27,3 +27,5 @@ async function run() {
 }
 
 run();
+
+mongoose.disconnect();

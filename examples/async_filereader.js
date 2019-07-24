@@ -1,6 +1,5 @@
-const fs = require('fs');
-
-fs.readdir('./', (err, files) => {
-    if (err) console.log('Error', err);
-    else console.log('Result', files);
-});
+console.log('Hello')
+setTimeout(()=> {
+    console.log('Call to DB');
+}, 4000);
+console.log('Goodbye');

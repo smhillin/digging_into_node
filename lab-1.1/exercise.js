@@ -1,5 +1,5 @@
 
-//Check if user is alumni .  If they are offer them tickets to toip events
+//Check if user is alumni .  If they are offer them tickets to top events
 getUser(1, (user) => {
   console.log('user: ', user);
   if (user.alumni) {
